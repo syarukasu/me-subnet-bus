@@ -1,0 +1,5 @@
+pluginManagement {
+    repositories { gradlePluginPortal(); maven { url = 'https://maven.minecraftforge.net' } }
+}
+rootProject.name = 'me-subnet-bus'
+include 'core', 'forge-1201', 'neoforge-1211'

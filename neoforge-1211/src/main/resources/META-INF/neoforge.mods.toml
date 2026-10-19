@@ -1,0 +1,31 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="MIT"
+issueTrackerURL="https://github.com/syarukasu/me-subnet-bus/issues"
+[[mods]]
+modId="me_subnet_bus"
+version="${version}"
+displayName="ME Subnet Bus"
+displayURL="https://github.com/syarukasu/me-subnet-bus"
+logoFile="assets/me_subnet_bus/textures/part/storage.png"
+logoBlur=false
+authors="syarukasu"
+description='''A two-sided AE2 cable part sharing power and exposing subnet storage without merging grids.'''
+[[dependencies.me_subnet_bus]]
+modId="neoforge"
+type="required"
+versionRange="[21.1,21.2)"
+ordering="NONE"
+side="BOTH"
+[[dependencies.me_subnet_bus]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1,1.21.2)"
+ordering="NONE"
+side="BOTH"
+[[dependencies.me_subnet_bus]]
+modId="ae2"
+type="required"
+versionRange="[19.2.17,20)"
+ordering="AFTER"
+side="BOTH"

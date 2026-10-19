@@ -1,0 +1,7 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+[[mods]]
+modId="me_subnet_bus_test"
+version="1"
+displayName="ME Subnet Bus Runtime Tests"

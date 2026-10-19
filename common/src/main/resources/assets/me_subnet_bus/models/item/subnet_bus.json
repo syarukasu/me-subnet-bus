@@ -1,0 +1,53 @@
+{
+  "parent": "me_subnet_bus:item/bus_2",
+  "overrides": [
+    {
+      "predicate": {
+        "me_subnet_bus:mode": 0
+      },
+      "model": "me_subnet_bus:item/bus_0"
+    },
+    {
+      "predicate": {
+        "me_subnet_bus:mode": 1
+      },
+      "model": "me_subnet_bus:item/bus_1"
+    },
+    {
+      "predicate": {
+        "me_subnet_bus:mode": 2
+      },
+      "model": "me_subnet_bus:item/bus_2"
+    },
+    {
+      "predicate": {
+        "me_subnet_bus:mode": 3
+      },
+      "model": "me_subnet_bus:item/bus_3"
+    },
+    {
+      "predicate": {
+        "me_subnet_bus:mode": 4
+      },
+      "model": "me_subnet_bus:item/bus_4"
+    },
+    {
+      "predicate": {
+        "me_subnet_bus:mode": 5
+      },
+      "model": "me_subnet_bus:item/bus_5"
+    },
+    {
+      "predicate": {
+        "me_subnet_bus:mode": 6
+      },
+      "model": "me_subnet_bus:item/bus_6"
+    },
+    {
+      "predicate": {
+        "me_subnet_bus:mode": 7
+      },
+      "model": "me_subnet_bus:item/bus_7"
+    }
+  ]
+}
