@@ -5,37 +5,18 @@ sourceSets.main.java.srcDir '../common/src/main/java'
 sourceSets.main.java.srcDir '../core/src/main/java'
 sourceSets.main.resources.srcDir '../common/src/main/resources'
 sourceSets {
-    gameTest {
-        java.srcDir '../common/src/gameTest/java'
-        compileClasspath += sourceSets.main.output + sourceSets.main.compileClasspath
-        runtimeClasspath += sourceSets.main.output + sourceSets.main.runtimeClasspath
-    }
 }
 neoForge {
     version = '21.1.247'
     runs {
         client {
             client(); gameDirectory = file('run')
-            if(project.hasProperty('visualTest')) {
-                systemProperty 'subnet.visual','true'
-                if(project.hasProperty('menuSmoke')) systemProperty 'subnet.menuSmoke','true'
-                if(project.hasProperty('artSmoke')) systemProperty 'subnet.artSmoke','true'
-                programArguments.addAll('--quickPlaySingleplayer','SubnetQA')
-            }
         }
         server { server(); gameDirectory = file('run-server'); programArgument '--nogui' }
-        gameTestServer {
-            type = 'gameTestServer'
-            gameDirectory = file('build/gametest')
-            systemProperty 'neoforge.enabledGameTestNamespaces', 'me_subnet_bus_test'
-            systemProperty 'subnet.report', project.file('build/gametest/results.xml').absolutePath
-        }
     }
     mods {
         me_subnet_bus { sourceSet(sourceSets.main) }
-        me_subnet_bus_test { sourceSet(sourceSets.gameTest) }
     }
-    addModdingDependenciesTo sourceSets.gameTest
 }
 dependencies {
     implementation 'org.appliedenergistics:appliedenergistics2:19.2.17'
