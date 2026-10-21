@@ -26,7 +26,7 @@ dependencies {
     implementation fg.deobf('appeng:appliedenergistics2-forge:15.4.10')
     runtimeOnly fg.deobf('org.appliedenergistics:guideme:20.1.7')
 }
-tasks.named('jar') { from rootProject.file('LICENSE'); finalizedBy 'reobfJar' }
+tasks.named('jar') { from rootProject.files('LICENSE', 'LICENSE-MIT', 'LICENSING.md'); finalizedBy 'reobfJar' }
 processResources {
     inputs.property 'version', project.version
     filesMatching('META-INF/mods.toml') { expand version: project.version }

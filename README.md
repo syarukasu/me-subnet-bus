@@ -70,3 +70,8 @@ Use JDK 21 to launch Gradle and install the Java 17 toolchain for Forge.
 ```
 
 Release JARs, checksums and change notes are available on [Releases](https://github.com/syarukasu/me-subnet-bus/releases).
+
+## Project License
+
+Original project code and resources: `LGPL-3.0-only`. See [LICENSE](LICENSE)
+and [LICENSING.md](LICENSING.md). Third-party material retains its own terms.
